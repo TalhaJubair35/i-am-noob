@@ -46,6 +46,7 @@ header {
   gap: 20px;
   align-self: stretch;
   width: 100%;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.5s ;
 }
@@ -53,10 +54,12 @@ header {
   transform: scale(1.1);
 }
 .plant-card img {
+  border-radius: 10px;
   width: 100%;
 }
 .btn {
   display: flex;
+  border-radius: 10px;
   height: 50px;
   padding: 26px 50px;
   justify-content: center;
@@ -107,27 +110,54 @@ header {
 
 /* plant lover section  */
 
-.plant-lover{
-  border: 1px solid red;
+.plant-lover {
   margin: 0px auto 133px auto;
   width: 80%;
   display: flex;
-  gap: 60px;
-  justify-content: space-between;
+  flex-direction: column; /* Default: mobile layout */
+  gap: 30px;
+  justify-content: center;
   align-items: center;
-  
 }
-.flower-store img{
-   position: absolute;
-  top: -15%;
-  left: 85%;
-  /* transform: translateX(100%) translateY(-80%); */
-  width: 120px;
+
+.flower-store {
+  width: 100%;
+  /* max-width: 450px; */
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background-image: url(./assets/flower-store.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.flower-store img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .plant-lover {
+    flex-direction: row; /* Desktop layout: side-by-side */
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plant-lover-text h2 {
+    font-size: 48px;
+  }
+  .flower-store img {
+    display: block;
+  position: absolute;
+  top: -20%;
+  left: 75%;
+  width: 200px;
   z-index: 2;
   background: none;
 }
-.flower-store{
-   width: 100%;
+.flower-store {
+  width: 100%;
   max-width: 450px;
   position: relative;
   aspect-ratio: 1 / 1;
@@ -137,4 +167,39 @@ header {
   background-position: center;
   flex-shrink: 0;
 }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .plant-lover {
+    flex-direction: column; /* Desktop layout: side-by-side */
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plant-lover-text h2 {
+    font-size: 48px;
+  }
+  .flower-store img {
+    /* display: block; */
+  position: absolute;
+  top: -20%;
+  left: 75%;
+  width: 200px;
+  z-index: 2;
+  background: none;
+}
+.flower-store {
+  width: 100%;
+  /* max-width: 450px; */
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background-image: url(./assets/flower-store.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+}
+
+
 
