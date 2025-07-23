@@ -26,9 +26,7 @@
 
   <body>
     <!-- header section  -->
-    <header
-      class="flex items-center content-center justify-between w-[80%]  "
-    >
+    <header class="flex items-center content-center justify-between w-[80%]">
       <figure>
         <img
           width="150px"
@@ -37,27 +35,47 @@
         />
       </figure>
       <nav>
-        <ul class="flex items-center content-center justify-between gap-8 text-[16px] text-[#8987A1]">
-  <li class="hidden md:block">
-    <a href="#" class="hover:text-black hover:underline">Home</a>
-  </li>
-  <li class="hidden md:block">
-    <a href="#" class="hover:text-black hover:underline">Shop</a>
-  </li>
-  <li class="hidden md:block">
-    <a href="#" class="hover:text-black hover:underline">About Us</a>
-  </li>
-  <li class="block">
-    <a href="#" class="flex items-center gap-2 hover:text-black hover:underline">
-      <i class="fa-solid fa-cart-shopping"></i>
-      <span>Cart ($56)</span>
-    </a>
-  </li>
-</ul>
-
+        <ul
+          class="flex items-center content-center justify-between gap-8 text-[16px] text-[#8987A1]"
+        >
+          <li class="hidden md:block">
+            <a href="#" class="hover:text-black hover:underline">Home</a>
+          </li>
+          <li class="hidden md:block">
+            <a href="#" class="hover:text-black hover:underline">Shop</a>
+          </li>
+          <li class="hidden md:block">
+            <a href="#" class="hover:text-black hover:underline">About Us</a>
+          </li>
+          <li class="block">
+            <a
+              href="#"
+              class="flex items-center gap-2 hover:text-black hover:underline"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Cart ($56)</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <!-- banner section  -->
-     <section></section>
+    <section
+      class="w-[80%]  banner-section flex flex-col-reverse gap-4 md:flex-row items-center justify-between "
+    >
+      <div class="w-[100%]  flex flex-col gap-3">
+        <h1 class="font-bold   md:text-left text-[40px]">
+          ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span>
+        </h1>
+        <p class="text-[16px] font-normal mt-4 md:text-left">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh flowers that are perfect for any occasion.
+        </p>
+      </div>
+      <figure class=" w-[100%]">
+        <img class="w-[100%]" src="./assets/hero-flower.png" alt="" />
+      </figure>
+    </section>
   </body>
 </html>
