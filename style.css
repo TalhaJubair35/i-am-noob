@@ -11,3 +11,77 @@ header {
 .banner-section {
   margin: 120px auto;
 }
+/* plant section  */
+.plant-section {
+  display: flex;
+  margin: 0px auto 200px auto;
+  width: 80%;
+  flex-direction: column;
+  gap: 49px;
+}
+.plant-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.plant-title h1 {
+  color: #e95a08;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+.plant-title p {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.plant-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  width: 27%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.plant-card img {
+  width: 270px;
+  height: 322px;
+}
+.btn {
+  display: flex;
+  height: 50px;
+  padding: 26px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background: #e95a08;
+  color: aliceblue;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #f78b4c;
+}
+.plant-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.plant-card > div h3 {
+  font-size: 17px;
+  color: #111;
+}
+
+.plant-card > div p {
+  font-size: 19px;
+  font-weight: 700;
+}
+.plant-grid-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
