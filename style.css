@@ -104,3 +104,37 @@ header {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* plant lover section  */
+
+.plant-lover{
+  border: 1px solid red;
+  margin: 0px auto 133px auto;
+  width: 80%;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.flower-store img{
+   position: absolute;
+  top: -15%;
+  left: 85%;
+  /* transform: translateX(100%) translateY(-80%); */
+  width: 120px;
+  z-index: 2;
+  background: none;
+}
+.flower-store{
+   width: 100%;
+  max-width: 450px;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background-image: url(./assets/flower-store.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
