@@ -106,7 +106,7 @@ header {
   display: grid;
   column-gap: 20px;
   row-gap: 30px;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 
@@ -334,10 +334,7 @@ header {
   .bloom-plant img,
   .ana-plant img,
   .zaba-plant img {
-
     height: auto;
-
-
   }
 
   .mg-bottom {
@@ -345,3 +342,65 @@ header {
   }
 
 }
+
+
+
+.subscribe-bg {
+  width: 100%;
+  height: 533px;
+  background-image: url(./assets/news-letter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  aspect-ratio: 1920px/ 533px;
+  text-align: center;
+  position: relative;
+}
+form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+
+form button {
+  
+  width: 15%;
+  padding: 10px;
+  background: #da7d0b;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #da500b;
+}
+.search{
+  width: 100%;
+  background: none;
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: none;
+  z-index: 2;
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
+
+}
+.search h1,form{
+  background: none;
+}
+
+
+
+
