@@ -5,13 +5,16 @@
   background-color: #f5f8ff;
   font-family: "Inter", sans-serif;
 }
+
 header {
   margin: auto;
   margin-top: 20px;
 }
+
 .banner-section {
   margin: 120px auto;
 }
+
 /* plant section  */
 .plant-section {
   display: flex;
@@ -20,11 +23,13 @@ header {
   flex-direction: column;
   gap: 49px;
 }
+
 .plant-title {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .plant-title h1 {
   color: #e95a08;
   text-align: center;
@@ -32,6 +37,7 @@ header {
   font-style: normal;
   font-weight: 700;
 }
+
 .plant-title p {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -39,6 +45,7 @@ header {
   font-style: normal;
   font-weight: 400;
 }
+
 .plant-card {
   display: flex;
   flex-direction: column;
@@ -48,15 +55,18 @@ header {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s ;
+  transition: 0.5s;
 }
-.plant-card:hover{
+
+.plant-card:hover {
   transform: scale(1.1);
 }
+
 .plant-card img {
   border-radius: 10px;
   width: 100%;
 }
+
 .btn {
   display: flex;
   border-radius: 10px;
@@ -70,29 +80,33 @@ header {
   color: aliceblue;
   cursor: pointer;
 }
+
 .btn:hover {
   background: #f78b4c;
 }
-.plant-card > div {
+
+.plant-card>div {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 }
-.plant-card > div h3 {
+
+.plant-card>div h3 {
   font-size: 17px;
   color: #111;
 }
 
-.plant-card > div p {
+.plant-card>div p {
   font-size: 19px;
   font-weight: 700;
 }
-.plant-grid-box{
-    display: grid;
-    column-gap: 20px;
-    row-gap: 30px;
-    grid-template-columns: repeat(1,1fr);
+
+.plant-grid-box {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 
@@ -102,6 +116,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (min-width: 1024px) {
   .plant-grid-box {
     grid-template-columns: repeat(4, 1fr);
@@ -114,7 +129,8 @@ header {
   margin: 0px auto 133px auto;
   width: 80%;
   display: flex;
-  flex-direction: column; /* Default: mobile layout */
+  flex-direction: column;
+  /* Default: mobile layout */
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -138,7 +154,8 @@ header {
 
 @media (min-width: 768px) {
   .plant-lover {
-    flex-direction: row; /* Desktop layout: side-by-side */
+    flex-direction: row;
+    /* Desktop layout: side-by-side */
     gap: 60px;
     justify-content: space-between;
     align-items: center;
@@ -147,30 +164,34 @@ header {
   .plant-lover-text h2 {
     font-size: 48px;
   }
+
   .flower-store img {
     display: block;
-  position: absolute;
-  top: -20%;
-  left: 75%;
-  width: 200px;
-  z-index: 2;
-  background: none;
+    position: absolute;
+    top: -20%;
+    left: 75%;
+    width: 200px;
+    z-index: 2;
+    background: none;
+  }
+
+  .flower-store {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-image: url(./assets/flower-store.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+  }
 }
-.flower-store {
-  width: 100%;
-  max-width: 450px;
-  position: relative;
-  aspect-ratio: 1 / 1;
-  background-image: url(./assets/flower-store.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex-shrink: 0;
-}
-}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .plant-lover {
-    flex-direction: column; /* Desktop layout: side-by-side */
+    flex-direction: column;
+    /* Desktop layout: side-by-side */
     gap: 60px;
     justify-content: space-between;
     align-items: center;
@@ -179,27 +200,148 @@ header {
   .plant-lover-text h2 {
     font-size: 48px;
   }
+
   .flower-store img {
     /* display: block; */
-  position: absolute;
-  top: -20%;
-  left: 75%;
-  width: 200px;
-  z-index: 2;
-  background: none;
+    position: absolute;
+    top: -20%;
+    left: 75%;
+    width: 200px;
+    z-index: 2;
+    background: none;
+  }
+
+  .flower-store {
+    width: 100%;
+    /* max-width: 450px; */
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-image: url(./assets/flower-store.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+  }
 }
-.flower-store {
-  width: 100%;
-  /* max-width: 450px; */
+
+
+.latest-deals {
+  margin: 0 auto 120px auto;
+
+}
+
+.mg-bottom {
+  margin-bottom: 100px;
+}
+
+.latest-deals {
+  margin: 0 auto 120px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.bloom-plant,
+.ana-plant,
+.zaba-plant {
   position: relative;
-  aspect-ratio: 1 / 1;
-  background-image: url(./assets/flower-store.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex-shrink: 0;
-}
+  display: inline-block;
+  width: 100%;
 }
 
+.bloom-plant img,
+.ana-plant img {
+  width: 100%;
+  height: 210px;
+  filter: brightness(70%);
+  border-radius: 15px;
+}
+
+.zaba-plant img {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+  border-radius: 15px;
+}
+
+.bloom,
+.ana,
+.zabo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: none;
+  z-index: 2;
 
 
+
+}
+
+
+.zabo p {
+  background: none;
+  text-align: center;
+  font-size: 35px;
+  color: #f5f8ff;
+  font-weight: 700;
+
+
+}
+
+.zabo a {
+  background: none;
+  text-align: center;
+  font-size: 25px;
+  color: #f5f8ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.zabo a:hover,
+.bloom a:hover,
+.ana a:hover {
+  color: bisque;
+}
+
+.bloom p,
+.ana p {
+  background: none;
+  text-align: center;
+  font-size: 15px;
+  color: #f5f8ff;
+  font-weight: 700;
+}
+
+.bloom a,
+.ana a {
+  background: none;
+  text-align: center;
+  font-size: 15px;
+  color: #f5f8ff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+  .deal-grid {
+    flex-direction: column;
+
+  }
+
+  .bloom-plant img,
+  .ana-plant img,
+  .zaba-plant img {
+
+    height: auto;
+
+
+  }
+
+  .mg-bottom {
+    margin-bottom: 40px;
+  }
+
+}
