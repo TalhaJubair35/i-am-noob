@@ -79,6 +79,7 @@ header {
   background: #e95a08;
   color: aliceblue;
   cursor: pointer;
+  font-size: 10px
 }
 
 .btn:hover {
