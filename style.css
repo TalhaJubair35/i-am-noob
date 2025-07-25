@@ -342,6 +342,20 @@ header {
     margin-bottom: 40px;
   }
 
+  .zabo p {
+
+    font-size: 20px;
+
+
+
+  }
+
+  .zabo a {
+
+    font-size: 15px;
+
+  }
+
 }
 
 
@@ -358,6 +372,7 @@ header {
   text-align: center;
   position: relative;
 }
+
 form input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -369,25 +384,27 @@ form input[type=text] {
 
 
 form button {
-  
+
   width: 15%;
   padding: 10px;
   background: #da7d0b;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
+  border-left: none;
+  /* Prevent double borders */
   cursor: pointer;
 }
 
 form button:hover {
   background: #da500b;
 }
-.search{
+
+.search {
   width: 100%;
   background: none;
   position: absolute;
-   top: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -398,34 +415,36 @@ form button:hover {
   flex-direction: column;
 
 }
-.search h1,form{
+
+.search h1,
+form {
   background: none;
 }
 
 /* footer  */
 
-footer{
+footer {
   padding: 50px 160px;
   color: #6B7280;
 }
-footer a:hover{
+
+footer a:hover {
   text-decoration: underline;
 }
+
 @media screen and (max-width:768px) {
-  footer{
+  footer {
     flex-direction: column;
     padding: 50px 20px;
     gap: 30px;
   }
-  footer p{
+
+  footer p {
     width: 100%;
   }
+
   .media-section {
     width: 100%;
   }
-  
+
 }
-
-
-
-
